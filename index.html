@@ -1,52 +1,117 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه شخصی من</title>
+    <title>Saam Shahrouzi - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Header with Profile Picture -->
     <header>
-        <div class="header-content">
-            <h1>نام شما</h1>
-            <img src="profile.jpg" alt="تصویر پروفایل" class="profile-img">
+        <div class="container">
+            <div class="profile-container">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+                <h1>Saam Shahrouzi</h1>
+                <p class="tagline">Programming Enthusiast | Low-Level Developer | AI Explorer</p>
+            </div>
         </div>
     </header>
 
-    <section class="about-me">
-        <h2>درباره من</h2>
-        <p>اینجا می‌توانید یک توضیح مختصر درباره خودتان، مهارت‌ها و علایق خود بنویسید. این بخش می‌تواند شامل اطلاعاتی درباره تحصیلات، تجربیات کاری و اهداف شما باشد.</p>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a programming and problem solving enthusiast who enjoys low level programming and is curious about how computers work behind the closed doors as doing so aids me in squeezing every drop of performance out of the program.</p>
+                    <br>
+                    <p>I have a soft spot for machine learning and AI, especially neural networks and how they perform under the lights of mathematics. The intersection of high-performance computing and intelligent systems never fails to fascinates me.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="skills">
-        <h2>مهارت‌های من</h2>
-        <ul>
-            <li>برنامه نویسی وب</li>
-            <li>طراحی رابط کاربری</li>
-            <li>توسعه نرم‌افزار</li>
-            <li>مدیریت پایگاه داده</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>C and C++</li>
+                        <li>Python</li>
+                        <li>HTML and CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Development Tools</h3>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>Make and CMake</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Third Party</h3>
+                    <ul class="skill-list">
+                        <li>Basic TensorFlow</li>
+                        <li>NumPy</li>
+                        <li>Selenium</li>
+                        <li>basic OpenGl</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="contact">
-        <h2>تماس با من</h2>
-        <form>
-            <label for="name">نام:</label>
-            <input type="text" id="name" name="name">
-            
-            <label for="email">ایمیل:</label>
-            <input type="email" id="email" name="email">
-            
-            <label for="phone">تلفن:</label>
-            <input type="tel" id="phone" name="phone">
-            
-            <button type="submit">ارسال</button>
-        </form>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>"جمله یا نقل قول الهام‌بخش شما اینجا قرار می‌گیرد."</p>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/Saam Shahrouzi" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/saam3023460" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2023 Saam Shahrouzi. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
